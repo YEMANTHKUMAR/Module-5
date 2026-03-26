@@ -22,10 +22,30 @@ To create a Python class `Student` with a destructor.
 ### PROGRAM
 
 ```
+class Person:
+    def __init__(self,name,age):
+        print("Person Created")
+        self.name = name
+        self.age = age
+    def printInfo(self):
+        print(self.name,self.age)
+    def __del__(self):
+        print(self.name,"Object Destroyed")
+
+name=input()
+age=int(input())
+P1=Person(name,age)
+#P2=Person("Joe",34)
+P1.printInfo()
+#P2.printInfo()
+del P1
+
 
 ```
 
 ### OUTPUT
+<img width="827" height="327" alt="image" src="https://github.com/user-attachments/assets/b9bbe614-e1de-4220-baa5-c881614f817f" />
 
 
 ### RESULT
+Thus, the Python program to demonstrate the use of a constructor, method, and destructor in a class has been implemented and executed successfully.
